@@ -108,6 +108,7 @@ RUN set -ex && \
     apkArch="$(apk --print-arch)"; \
 	case "$apkArch" in \
 		x86_64) s6Arch='amd64' ;; \
+		armv7) s6Arch='armhf' ;; \
 		armhf) s6Arch='armhf' ;; \
 		aarch64) s6Arch='aarch64' ;; \
 		ppc64le) s6Arch='ppc64le' ;; \
